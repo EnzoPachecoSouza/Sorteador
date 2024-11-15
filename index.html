@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteador de Bandas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sorteador de Bandas</h1>
+    <form id="sorteio-form">
+      <label for="categoria">Nome da Categoria:</label>
+      <input type="text" id="categoria" placeholder="Digite o nome da categoria" required>
+
+      <label for="quantidade">Quantidade de Bandas:</label>
+      <input type="number" id="quantidade" placeholder="Digite o número de bandas" required min="2">
+
+      <div id="bandas-container"></div>
+
+      <button type="button" id="gerar-inputs">Adicionar Inputs</button>
+      <button type="button" id="sortear" disabled>Sortear</button>
+    </form>
+
+    <div id="resultado">
+      <h2>Resultado do Sorteio</h2>
+      <table id="tabela-resultado">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nome da Banda</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="novo-sorteio">Novo Sorteio</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
